@@ -23,7 +23,7 @@ const ProductList = () => {
     fetchProducts()
     }, []);
 
-    if(loading) return <p>Loading...</p>
+    if(loading) return <p>Loading product list...</p>
 
     return (
         <div className="grid grid-cols-3 gap-6 p-6">
