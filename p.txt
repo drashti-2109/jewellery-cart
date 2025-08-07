@@ -1,0 +1,57 @@
+Fields for myAccount
+-> Personal details : 
+firstName
+lastName
+number
+email
+changePassword: Boolean (baki sab string)
+oldPassword
+newPassword
+confirmPassword
+
+-> Address :
+address
+country
+state
+city
+pincode: Number
+isdefault: Boolean
+
+This user schema will :
+Store login info (email, hashed password)
+Optionally support roles (e.g., admin, customer)
+Track user details (name, phone)
+Be secure (e.g., hashed password, validation)
+Be scalable for future features (like addresses, wishlists)
+
+
+
+Winston - logging library for centralized error logging
+
+* What is Centralized Error Logging?
+-> Instead of using console.error(...) everywhere, we create one reusable logger file.
+-> You just import it and call logger.error(...).
+-> It saves logs to files and/or prints clean logs in the terminal.
+
+
+Remaining
+1. Indexing in MongoDB
+2. Rate Limiting
+3. Move Token Handling to Cookie (Optional but safer for Web)
+
+
+* When Should You Use Aggregation?
+-> Joining data (like SQL joins)	
+EG: Populate user’s orders, stats, logs, etc.
+
+-> Data transformation	
+EG: Calculate age from DOB, fullName from first+last
+
+-> Advanced filtering	
+EG: Filter users by region, device, login stats
+
+-> Grouping/Statistics	
+EG: Group users by country, gender, usage activity
+
+-> Pagination + Facets	
+EG: Efficient pagination with meta info (e.g., total pages)
